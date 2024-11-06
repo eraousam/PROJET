@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALIOU pièces - détachées</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #dfee0e;
+        }
+        .header {
+            background-color: #e22e0e;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }RT
+        .product {
+            color: #005f99;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            filter: grayscale(100%);
+        }
+        .order-section, .payment-section {
+            margin: 100px 0;
+            padding: 100px;
+            border: 1px solid #acb4b9;
+        }
+        .thank-you-message {
+            display: none;
+            color: rgb(9, 10, 9);
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #e2e3e7;
+            color: rgb(13, 14, 12);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Bienvenue dans la boutique SALIOU pièce-détachées
+    </div>
+    <!-- Liste des produits -->
+    <div class="product-section">
+        <h2>Nos produits</h2><h2>Accueil</h2><h2>Contacts</h2>
+        <!-- Motos -->
+        <div class="product">
+            <h3>PIECES POUR DES MOTOS</h3>
+            <div>
+                <p>Motos Diakarta</p>
+                <img src="im2.png">
+            </div>
+            <div>
+                <p>Motos Super</p>
+                <img src="Corps-de-moto-transmission-plastique-pour-50-70cc-110cc-125cc-150cc-CG125-GN125-BM150-Honda-Suzuki-YAMAHA-Bajaj-t-l-viseurs-Scooter-Dirt-Bike-Tricycle-Pi-ces-de-Rechange-Moteur.webp" alt="Pièces Super">
+            </div>
+            <div>
+                <p>Motos Appaches</p>
+                <img src="ensemble-elements-moto-vecteur-vintage-collection-elements-moto-vecteurs-silhouette_1241836-4994.avif" alt="Pièces Appaches">
+            </div>
+            <div>
+                <p>Motos Mélium</p>
+                <img src="images (2).jpeg" alt="Pièces Mélium">
+            </div>
+        </div>
+        <!-- Voitures -->
+        <div class="product">
+            <h3>PIECES POUR DES VOITURES</h3>
+            <div>
+                <p>BMW</p>
+                <img src="BMW.jpg" alt="Pièces BMW">
+            </div>
+            <div>
+                <p>Pajero</p>
+                <img src="PAJERO.jpeg" alt="Pièces Pajero">
+            </div>
+            <div>
+                <p>Toyota</p>
+                <img src="TOYOTA.webp" alt="Pièces Toyota">
+            </div>
+            <div>
+                <p>4x4</p>
+                <img src="4X4.jpeg"alt="Pièces 4x4">
+            </div>
+            <div>
+                <p>Camion</p>
+                <img src="CAMION.jpeg" alt="Pièces Camion">
+            </div>
+        </div>
+    </div>
+    <!-- Commande -->
+    <div class="order-section">
+        <h2>Passer une commande</h2>
+        <form id="order-form">
+            <label for="piece">Sélectionnez la pièce :</label>
+            <select id="piece" name="piece">
+                <option value="diakarta">Motos Diakarta</option>
+                <option value="super">Motos Super</option>
+                <option value="appaches">Motos Appaches</option>
+                <option value="melium">Motos Mélium</option>
+                <option value="bmw">BMW</option>
+                <option value="pagero">Pajero</option>
+                <option value="toyota">Toyota</option>
+                <option value="4x4">4x4</option>
+                <option value="camion">Camion</option>
+            </select>
+            <button type="button" class="btn" onclick="addToCart()">Ajouter au panier</button>
+        </form>
+        <div id="cart"></div>
+    </div>
+    <!-- Paiement -->
+    <div class="payment-section">
+        <h2>Paiement</h2>
+        <p>Paiement disponible par Wave ou Orange Money au numéro : 775199698</p>
+        <img src="wave.png" alt="Logo Wave" width="50px">
+        <img src="img_0433.jpg" alt="Logo Orange Money" width="50px">
+    </div>
+    <div class="thank-you-message" id="thank-you-message">
+        Merci pour votre achat !
+    </div>
+    <script>
+        let cart = [];
+        function addToCart() {
+            const piece = document.getElementById('piece').value;
+            cart.push(piece);
+            document.getElementById('cart').innerHTML = `<p>Vous avez ajouté : ${cart.join(', ')}</p>`;
+        }
+        function processPayment() {
+            document.getElementById('thank-you-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

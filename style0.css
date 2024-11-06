@@ -1,0 +1,322 @@
+/* Style général */
+body {
+    background-image: url("BTP2.webp");
+    color: #f50a0af3;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+   
+color: #75f0f0f6;
+}
+
+h1 {
+    
+   
+text-align: center;
+    margin-top: 0;
+    color: #f7f4f4;
+}
+
+h2{
+
+
+text-align: left;
+    margin-top: 0;
+    color: #080707ec;
+    color: #e6f0f3;
+}
+
+/* Section Hero avec image de fond */
+.hero-section {
+    background: url('BTP1.jpg') no-repeat center center/cover;
+    
+   
+height: 100vh;
+    display: flex;
+    
+   
+justify-content: center;
+    align-items: center;
+    
+   
+position: relative;
+color: #070707fa;
+}
+}
+.welcome-text {
+    
+    text
+
+   
+text-align: center;
+    color: black;
+}
+
+
+
+.welcome-text h1 {
+    font-size: 3rem;
+    
+   
+animation: floatText 5s infinite alternate;
+}
+
+
+}
+
+@
+
+}
+
+@keyframes floatText {
+    
+    
+0% { transform: translateY(0); }
+    
+    
+
+   
+100% { transform: translateY(-10px); }
+}
+
+.btn {
+    
+   
+display: inline-block;
+    margin: 10px;
+    
+   
+padding: 10px 20px;
+    color: rgb(250, 246, 246);
+    
+   
+background: rgba(94, 235, 12, 0.8);
+    
+   
+text-decoration: none;
+    
+   
+border-radius: 5px;
+    
+    transit
+
+   
+transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: rgb(4, 27, 238);
+}
+
+
+}
+
+/
+/* Section Plans de maisons */
+.plans-section {
+    padding: 50px;
+    
+   
+background-color: #0bf3e0;
+}
+
+.plans-gallery {
+    
+   
+display: flex;
+    
+    justify
+justify-content: space-around;
+    
+   
+gap: 15px;
+}
+
+.plans-gallery img {
+    
+   
+width: 200px;
+    height: auto;
+    
+   
+border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.plans-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Section Maisons R+1 à R+4 */
+.houses-section {
+    
+   
+background-color: #e8eff0fa;
+    padding: 50px;
+}
+
+.houses-grid {
+    
+   
+display: flex;
+    
+    justify
+justify-content: space-around;
+color: #000;
+}
+
+.house-card {
+    
+    text
+text-align: center;
+}
+
+.house-card img {
+    
+    wi
+width: 150px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Section Sélection d'habitat */
+.select-habitat {
+    
+   
+text-align: center;
+    background-color: #60f00d;
+    padding: 50px;
+}
+
+select {
+    
+}
+
+select {
+   
+
+}
+
+select
+
+}
+
+padding: 10px;
+    
+   
+font-size: 1.2rem;
+    border-radius: 5px;
+    
+   
+border: 1px solid #ccc;
+}
+
+/* Section Contact et réseaux sociaux */
+.contact-section {
+    background-color: #1038ec;
+    
+   
+color: rgb(74, 224, 15);
+    padding: 50px;
+    
+    text
+text-align: center;
+}
+
+.social-icons a {
+    margin: 0 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+
+}
+
+/
+/* Section Garantie et sécurité */
+.guarantee-section {
+    
+   
+background-color: #59e607;
+    
+   
+padding: 30px;
+    
+    text
+
+   
+text-align: center;
+}
+
+.guarantee-section p {
+    font-size: 1.2rem;
+    color: #eaecf3;
+}
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .header {
+
+            background-color: #007BFF;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            font-weight: bold; /* Mettre le texte en gras */
+            color: #FFD700; /* Couleur du texte (ici jaune or) */
+            color: white;
+            padding: 50px;
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        /* Style des liens de connexion */
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #ffffff; /* Couleur du texte */
+            background-color: #007BFF; /* Couleur du bouton */
+            border-radius: 5px;
+        }
+
+        .social-links a:hover {
+            background-color: #0056b3; /* Couleur du bouton au survol */
+        }
+
+        /* Changer la couleur des liens spécifiques */
+        #facebook-login {
+            color: #4267B2; /* Couleur spécifique pour Facebook */
+        }
+
+        #whatsapp-login {
+            color: #25D366; /* Couleur spécifique pour WhatsApp */
+        }
+
+        #instagram-login {
+            color: #E1306C; /* Couleur spécifique pour Instagram */
+        }
+
+        #telegram-login {
+            color: #0088cc; /* Couleur spécifique pour Telegram */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section En-tête -->
+    <div class="header">
+}
+``
